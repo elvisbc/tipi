@@ -256,7 +256,7 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
             }
         });
 
-        cboOpcion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona", "Calidad de red", "Descuento Saldo", "Routing category", "Migracion", "Cancelacion de linea", "Bloqueo de linea y equipo" }));
+        cboOpcion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona", "Calidad de red", "Descuento Saldo", "Routing category", "Migracion", "Cancelacion de linea", "Bloqueo de linea y equipo", "Internet en 4G", "Ciclo de facturacion", "Pago exitoso", "Como saber su numero", "Confirmacion de recarga-SI", "Confirmacion de recarga-NO", "Desea saber su saldo", "Como saber su saldo", "Paquete TI5", "Confirmar compra de paquete TI5", "Paquete MM10", "Portabilidad", "Plan contratado", "Chip de reposicion", "Routing category" }));
         cboOpcion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cboOpcionActionPerformed(evt);
@@ -663,6 +663,126 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
             txtConsulta.setText(consulta);
             txtSolucion.setText(solucion);
         }
+        else if(cboOpcion.getSelectedItem().equals("Internet en 4G")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea saber si su linea accede a internet en 4G";
+            solucion="Se le indica que no es posible,su equipo y zona no son compatibles para la red 4G";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Ciclo de facturacion")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea saber su ciclo de facturacion";
+            solucion="Se le detalla su ciclo ... de facturacion";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Pago exitoso")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea confirmar el pago de su recibo";
+            solucion="Se le indica que esta al dia en sus recibos";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Como saber su numero")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea saber cual es su numero";
+            solucion="Se le indica la marcacion *180#send";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Confirmacion de recarga-SI")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea confirmar si se realizo la recarga";
+            solucion="Se le indica si se realizo la recarga";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Confirmacion de recarga-NO")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea confirmar si se realizo la recarga";
+            solucion="Se le indica no se realizo la recarga";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Desea saber su saldo")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea saber su saldo";
+            solucion="Se le brinda la informacion de su saldo";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Como saber su saldo")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea saber los medios de consulta de saldo";
+            solucion="Se le brinda los medios de consulta de saldo";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Paquete TI5")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea saber sobre el paquete TI5";
+            solucion="Se brinda informacion del paquete TI5";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Confirmar compra de paquete TI5")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea confirmar la compra del paquete TI5";
+            solucion="Se confirma la compra del paquete TI5";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Paquete MM10")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea saber sobre el paquete MM10";
+            solucion="Se le indica como comprar el paquete MM10";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Portabilidad")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea port su linea con nosotros";
+            solucion="Se le indica las consideraciones de la portabilidad";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Plan contratado")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea saber los beneficios del plan .....";
+            solucion="Se le detalla los beneficios del plan ......";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Chip de reposicion")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente desea saber como recuperar su chip de resposicion";
+            solucion="Se le indica como recuperar su chip por la web y presencial";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
+        else if(cboOpcion.getSelectedItem().equals("Routing category")){
+            cboSubopcion.setVisible(false);
+            
+            consulta="Cliente indica no puede realizar llamadas";
+            solucion="Se valida RC incorrecto ... ,se resetea,se le indica reiniciar y realizar las pruebas";
+            txtConsulta.setText(consulta);
+            txtSolucion.setText(solucion);
+        }
         else{
             cboSubopcion.setVisible(false);
             consulta="";
@@ -728,14 +848,17 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
         opcion=cboSubopcion.getSelectedIndex();
         switch(opcion){
                 case 0:
-                    consulta="Cliente indica que navega lento";
-                    solucion="Realiza descarte nivel 1, se realiza prueba cruzada equipo";
+                    consulta="Cliente indica la navegacion es muy lenta";
+                    solucion="Se le indica activar el modo avion,realizar la preuba"+
+                            "cruzada y el borrado de la memoria cache,reiniciar y realizar las pruebas";
                     txtConsulta.setText(consulta);
                     txtSolucion.setText(solucion);
                     break;
                 case 1:
-                    consulta="Cliente no puede navegar";
-                    solucion="Realiza descarte nivel 1, se realiza prueba cruzada equipo";
+                    consulta="Cliente indica no accede a internet";
+                    solucion="Se le indica enviar un sms con la palabra CONFIG al 170,"+
+                            "se envia el sms de configuracion manual y el automatico,"+
+                            "reiniciar y realizar las pruebas, equipo NUEVO ";
                     txtConsulta.setText(consulta);
             txtSolucion.setText(solucion);
                     break;

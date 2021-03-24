@@ -414,7 +414,7 @@
     <Component class="javax.swing.JComboBox" name="cboOpcion">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="7">
+          <StringArray count="22">
             <StringItem index="0" value="Selecciona"/>
             <StringItem index="1" value="Calidad de red"/>
             <StringItem index="2" value="Descuento Saldo"/>
@@ -422,6 +422,21 @@
             <StringItem index="4" value="Migracion"/>
             <StringItem index="5" value="Cancelacion de linea"/>
             <StringItem index="6" value="Bloqueo de linea y equipo"/>
+            <StringItem index="7" value="Internet en 4G"/>
+            <StringItem index="8" value="Ciclo de facturacion"/>
+            <StringItem index="9" value="Pago exitoso"/>
+            <StringItem index="10" value="Como saber su numero"/>
+            <StringItem index="11" value="Confirmacion de recarga-SI"/>
+            <StringItem index="12" value="Confirmacion de recarga-NO"/>
+            <StringItem index="13" value="Desea saber su saldo"/>
+            <StringItem index="14" value="Como saber su saldo"/>
+            <StringItem index="15" value="Paquete TI5"/>
+            <StringItem index="16" value="Confirmar compra de paquete TI5"/>
+            <StringItem index="17" value="Paquete MM10"/>
+            <StringItem index="18" value="Portabilidad"/>
+            <StringItem index="19" value="Plan contratado"/>
+            <StringItem index="20" value="Chip de reposicion"/>
+            <StringItem index="21" value="Routing category"/>
           </StringArray>
         </Property>
       </Properties>

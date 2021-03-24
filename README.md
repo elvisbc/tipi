@@ -2,4 +2,4 @@
 
 DESCARGAR
 ===========
-dist/copiar.jar 
+dist/tipi.jar 

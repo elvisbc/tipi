@@ -2,4 +2,4 @@
 
 DESCARGAR
 ===========
-https://github.com/elvisbc/tipi/blob/main/dist/tipi.jar
+https://github.com/elvisbc/tipi/raw/main/dist/tipi.jar

@@ -32,8 +32,7 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
      */
     public Formulario() {
         initComponents();
-        
-        cboSubopcion.setVisible(false);
+     
          
     }
     public void setClipboard(String texto){
@@ -92,37 +91,12 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
-        btnLimpiar = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
         txtLID = new javax.swing.JButton();
-        btnCopiar = new javax.swing.JButton();
-        txtLID2 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtConsulta = new javax.swing.JTextArea();
-        txtLID3 = new javax.swing.JButton();
         txtDireccion = new javax.swing.JTextField();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        txtSolucion = new javax.swing.JTextArea();
-        jLabel5 = new javax.swing.JLabel();
-        txtLID4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         cboContrata = new javax.swing.JComboBox<>();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        txtBorrador = new javax.swing.JTextArea();
         jSeparator3 = new javax.swing.JSeparator();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        txtConsulta2 = new javax.swing.JTextArea();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        txtConsulta3 = new javax.swing.JTextArea();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        txtLID7 = new javax.swing.JButton();
-        txtLID8 = new javax.swing.JButton();
-        btnCopiar2 = new javax.swing.JButton();
-        btnCopiar3 = new javax.swing.JButton();
-        cboSubopcion = new javax.swing.JComboBox<>();
         jLabel10 = new javax.swing.JLabel();
         txtCto = new javax.swing.JTextField();
         txtLID9 = new javax.swing.JButton();
@@ -133,21 +107,32 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
         jScrollPane6 = new javax.swing.JScrollPane();
         txtResultado = new javax.swing.JTextArea();
         btnCopiarNuevo = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
+        cboMotivo = new javax.swing.JComboBox<>();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        txtCliente = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        txtTicket = new javax.swing.JTextField();
+        txtCto2 = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        txtCoordenadas = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        txtActivos = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        txtAfectados = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        txtContratista = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        txtNomTecnico = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        txtResultado2 = new javax.swing.JTextArea();
+        btnCopiar2 = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
-
-        jLabel3.setText("Consulta / inconveniente");
-
-        btnLimpiar.setText("Limpiar");
-        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLimpiarActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setText("Solucion / Informacion");
 
         txtLID.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         txtLID.setText("X");
@@ -157,50 +142,9 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
             }
         });
 
-        btnCopiar.setText("Copiar");
-        btnCopiar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCopiarActionPerformed(evt);
-            }
-        });
-
-        txtLID2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        txtLID2.setText("X");
-        txtLID2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLID2ActionPerformed(evt);
-            }
-        });
-
-        txtConsulta.setColumns(20);
-        txtConsulta.setRows(5);
-        jScrollPane1.setViewportView(txtConsulta);
-
-        txtLID3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        txtLID3.setText("X");
-        txtLID3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLID3ActionPerformed(evt);
-            }
-        });
-
         txtDireccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtDireccionActionPerformed(evt);
-            }
-        });
-
-        txtSolucion.setColumns(20);
-        txtSolucion.setRows(5);
-        jScrollPane2.setViewportView(txtSolucion);
-
-        jLabel5.setText("Borrador");
-
-        txtLID4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        txtLID4.setText("X");
-        txtLID4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLID4ActionPerformed(evt);
             }
         });
 
@@ -215,60 +159,7 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
             }
         });
 
-        txtBorrador.setColumns(20);
-        txtBorrador.setRows(5);
-        jScrollPane3.setViewportView(txtBorrador);
-
         jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
-
-        txtConsulta2.setColumns(20);
-        txtConsulta2.setRows(5);
-        jScrollPane4.setViewportView(txtConsulta2);
-
-        txtConsulta3.setColumns(20);
-        txtConsulta3.setRows(5);
-        jScrollPane5.setViewportView(txtConsulta3);
-
-        jLabel8.setText("Consulta / inconveniente 2");
-
-        jLabel9.setText("Consulta / inconveniente 3");
-
-        txtLID7.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        txtLID7.setText("X");
-        txtLID7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLID7ActionPerformed(evt);
-            }
-        });
-
-        txtLID8.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        txtLID8.setText("X");
-        txtLID8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLID8ActionPerformed(evt);
-            }
-        });
-
-        btnCopiar2.setText("Copiar 2");
-        btnCopiar2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCopiar2ActionPerformed(evt);
-            }
-        });
-
-        btnCopiar3.setText("Copiar 3");
-        btnCopiar3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCopiar3ActionPerformed(evt);
-            }
-        });
-
-        cboSubopcion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lentitud", "No navega", "No recibe llamada", "No realiza llamada", "No recibe SMS", "No realiza SMS" }));
-        cboSubopcion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cboSubopcionActionPerformed(evt);
-            }
-        });
 
         jLabel10.setText("CTO/ NAP (Piso):");
 
@@ -315,60 +206,142 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
             }
         });
 
+        cboMotivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona", "POTENCIA DEGRADADA", "SIN POTENCIA", "PUERTOS SIN POTENCIA", "PUERTOS DEGRADADOS", "CTO ROBADA" }));
+        cboMotivo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboMotivoActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setText("Motivo:");
+
+        jLabel7.setText("Ticket:");
+
+        txtCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtClienteActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("Cliente:");
+
+        txtTicket.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTicketActionPerformed(evt);
+            }
+        });
+
+        txtCto2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCto2ActionPerformed(evt);
+            }
+        });
+
+        jLabel13.setText("CTO:");
+
+        txtCoordenadas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCoordenadasActionPerformed(evt);
+            }
+        });
+
+        jLabel14.setText("Coordenadas:");
+
+        txtActivos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtActivosActionPerformed(evt);
+            }
+        });
+
+        jLabel15.setText("Activos:");
+
+        txtAfectados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAfectadosActionPerformed(evt);
+            }
+        });
+
+        jLabel16.setText("Afectados:");
+
+        txtContratista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtContratistaActionPerformed(evt);
+            }
+        });
+
+        jLabel17.setText("Contratista que reporta:");
+
+        txtNomTecnico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNomTecnicoActionPerformed(evt);
+            }
+        });
+
+        jLabel18.setText("Nombre del tecnico:");
+
+        txtResultado2.setColumns(20);
+        txtResultado2.setRows(5);
+        jScrollPane7.setViewportView(txtResultado2);
+
+        btnCopiar2.setText("Copiar");
+        btnCopiar2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCopiar2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
-            .addComponent(jScrollPane2)
-            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING)
-            .addComponent(jScrollPane4)
-            .addComponent(jScrollPane5)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(jSeparator1)
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtLID2))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel7)
+                                            .addComponent(jLabel8)
+                                            .addComponent(jLabel13)
+                                            .addComponent(jLabel14)
+                                            .addComponent(jLabel15))
+                                        .addGap(12, 12, 12)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtCto2, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtCoordenadas, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtActivos, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtTicket, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(cboMotivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jLabel6))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtLID3))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtLID7))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtLID8))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(btnCopiar, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnCopiar2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnCopiar3, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(41, 41, 41)
-                                .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtLID4)
-                                .addGap(56, 56, 56)
-                                .addComponent(cboSubopcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btnCopiar2)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel16)
+                                            .addComponent(jLabel17)
+                                            .addComponent(jLabel18))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtAfectados, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtContratista, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtNomTecnico, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jScrollPane7)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtCto, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtCto, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(txtLID9)
                                             .addComponent(txtLID)))
@@ -378,113 +351,106 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
                                         .addGap(6, 6, 6)
                                         .addComponent(cboContrata, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jLabel10))
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cboPuerto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel12)
-                            .addComponent(cboDistrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnCopiarNuevo))
+                                .addGap(0, 0, 0)
+                                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, 0)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cboPuerto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel11)
+                                    .addComponent(jLabel12)
+                                    .addComponent(cboDistrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnCopiarNuevo))))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(jLabel1)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(cboContrata, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jLabel2)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtLID)))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel12)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(cboDistrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGap(0, 0, 0)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel10)
-                                .addComponent(jLabel11))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(txtCto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(txtLID9)
-                                .addComponent(cboPuerto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addComponent(jSeparator3))
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnCopiarNuevo)
+                        .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(68, 68, 68)
+                        .addComponent(cboContrata, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtLID))
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtLID9)
+                            .addComponent(txtCto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cboDistrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCopiarNuevo))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cboPuerto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 7, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtLID4)
-                        .addComponent(cboSubopcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel6)
+                            .addComponent(cboMotivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(9, 9, 9)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(txtTicket, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel8)
+                            .addComponent(txtCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel16)
+                            .addComponent(txtAfectados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel17)
+                            .addComponent(txtContratista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel18)
+                            .addComponent(txtNomTecnico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtLID2)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(4, 4, 4)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtLID7))
-                .addGap(4, 4, 4)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtLID8))
-                .addGap(1, 1, 1)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtLID3))
-                .addGap(1, 1, 1)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(3, 3, 3)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCopiar)
-                    .addComponent(btnCopiar2)
-                    .addComponent(btnCopiar3)
-                    .addComponent(btnLimpiar))
-                .addGap(8, 8, 8))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel13)
+                            .addComponent(txtCto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel14)
+                            .addComponent(txtCoordenadas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel15)
+                            .addComponent(txtActivos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnCopiar2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
-
-        /*txtID.setText(null);
-        txtNum.setText(null);
-        txtConsulta.setText(null);
-        txtConsulta2.setText(null);
-        txtConsulta3.setText(null);
-        txtSolucion.setText(null);
-        txtBorrador.setText(null);
-        cboOpcion.setSelectedIndex(0);
-        cboSubopcion.setVisible(false);*/
-
-    }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void txtLIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLIDActionPerformed
 
@@ -492,51 +458,9 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
         // TODO add your handling code here:
     }//GEN-LAST:event_txtLIDActionPerformed
 
-    private void btnCopiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCopiarActionPerformed
-
-        String id,numero,borrador,consulta,solucion,copiar,guardar;
-        
-        /*id=txtID.getText().toString().replace(" ", "");
-        numero=txtNum.getText().toString();
-        consulta=txtConsulta.getText().toString();
-        solucion=txtSolucion.getText().toString();
-        borrador=txtBorrador.getText().toString();
-        
-        if(id.isEmpty()){
-            id="No muestra código en llamada";
-            
-        }
-        
-        copiar=numero+" // "+consulta+" // "+solucion+" // $$_"+id+"_&&";
-        guardar=numero+"//"+borrador+"//"+consulta+"//"+solucion+"//$$_"+id+"_&&";
-        setClipboard(copiar);
-        GuardarDatos(guardar);
-        //setClipboard(numero+"//"+consulta+"//"+solucion+"//$$_"+id+"_&&");*/
-
-    }//GEN-LAST:event_btnCopiarActionPerformed
-
-    private void txtLID2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLID2ActionPerformed
-
-        txtConsulta.setText(null);
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtLID2ActionPerformed
-
-    private void txtLID3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLID3ActionPerformed
-
-        txtSolucion.setText(null);
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtLID3ActionPerformed
-
     private void txtDireccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDireccionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDireccionActionPerformed
-
-    private void txtLID4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLID4ActionPerformed
-
-        txtBorrador.setText(null);
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtLID4ActionPerformed
 
     private void cboContrataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboContrataActionPerformed
 
@@ -740,103 +664,6 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
         // TODO add your handling code here:
     }//GEN-LAST:event_cboContrataActionPerformed
 
-    private void txtLID7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLID7ActionPerformed
-
-        txtConsulta2.setText(null);
-        
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtLID7ActionPerformed
-
-    private void txtLID8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLID8ActionPerformed
-            txtConsulta3.setText(null);       
-            // TODO add your handling code here:
-    }//GEN-LAST:event_txtLID8ActionPerformed
-
-    private void btnCopiar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCopiar2ActionPerformed
-
-        String id,numero,borrador,consulta2,solucion,copiar,guardar;
-        
-        /*id=txtID.getText().toString().replace(" ", "");
-        numero=txtNum.getText().toString();
-        consulta2=txtConsulta2.getText().toString();
-        solucion=txtSolucion.getText().toString();
-        borrador=txtBorrador.getText().toString();
-        
-        copiar=numero+" // "+consulta2+" // "+solucion+" // $$_"+id+"_&&";
-        guardar=numero+"//"+borrador+"//"+consulta2+"//"+solucion+"//$$_"+id+"_&&";
-        setClipboard(copiar);
-        GuardarDatos(guardar);*/
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCopiar2ActionPerformed
-
-    private void btnCopiar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCopiar3ActionPerformed
-        
-        String id,numero,borrador,consulta3,solucion,copiar,guardar;
-        
-        /*id=txtID.getText().toString().replace(" ", "");
-        numero=txtNum.getText().toString();
-        consulta3=txtConsulta3.getText().toString();
-        solucion=txtSolucion.getText().toString();
-        borrador=txtBorrador.getText().toString();
-        
-        copiar=numero+" // "+consulta3+" // "+solucion+" // $$_"+id+"_&&";
-        guardar=numero+"//"+borrador+"//"+consulta3+"//"+solucion+"//$$_"+id+"_&&";
-        setClipboard(copiar);
-        GuardarDatos(guardar);        */
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCopiar3ActionPerformed
-
-    private void cboSubopcionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboSubopcionActionPerformed
-
-       /* String consulta,solucion;
-        int opcion;
-        opcion=cboSubopcion.getSelectedIndex();
-        switch(opcion){
-                case 0:
-                    consulta="Cliente indica la navegacion es muy lenta";
-                    solucion="Se le indica activar el modo avion,realizar la preuba"+
-                            "cruzada y el borrado de la memoria cache,reiniciar y realizar las pruebas";
-                    txtConsulta.setText(consulta);
-                    txtSolucion.setText(solucion);
-                    break;
-                case 1:
-                    consulta="Cliente indica no accede a internet";
-                    solucion="Se le indica enviar un sms con la palabra CONFIG al 170,"+
-                            "se envia el sms de configuracion manual y el automatico,"+
-                            "reiniciar y realizar las pruebas, equipo NUEVO ";
-                    txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-                    break;
-                case 2:
-                    consulta="Cliente no puede recibir llamada";
-                    solucion="Realiza descarte nivel 1, se realiza prueba cruzada equipo";
-                    txtConsulta.setText(consulta);
-                    txtSolucion.setText(solucion);
-                    break;
-                case 3:
-                    consulta="Cliente no puede realizar llamada";
-                    solucion="Realiza descarte nivel 1, se realiza prueba cruzada equipo";
-                    txtConsulta.setText(consulta);
-                    txtSolucion.setText(solucion);
-                    break;
-                case 4:
-                    consulta="Cliente no puede recibir SMS";
-                    solucion="Realiza descarte nivel 1, se realiza prueba cruzada equipo";
-                    txtConsulta.setText(consulta);
-                    txtSolucion.setText(solucion);
-                    break;
-                case 5:
-                    consulta="Cliente no puede realizar SMS";
-                    solucion="Realiza descarte nivel 1, se realiza prueba cruzada equipo";
-                    txtConsulta.setText(consulta);
-                    txtSolucion.setText(solucion);
-                    break; 
-                   
-            }*/
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cboSubopcionActionPerformed
-
     private void txtCtoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCtoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCtoActionPerformed
@@ -936,49 +763,111 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
         setClipboard(datos);
     }//GEN-LAST:event_btnCopiarNuevoActionPerformed
 
+    private void cboMotivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboMotivoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cboMotivoActionPerformed
+
+    private void txtClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtClienteActionPerformed
+
+    private void txtTicketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTicketActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTicketActionPerformed
+
+    private void txtCto2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCto2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCto2ActionPerformed
+
+    private void txtCoordenadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCoordenadasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCoordenadasActionPerformed
+
+    private void txtActivosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtActivosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtActivosActionPerformed
+
+    private void txtAfectadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAfectadosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAfectadosActionPerformed
+
+    private void txtContratistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContratistaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtContratistaActionPerformed
+
+    private void txtNomTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomTecnicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomTecnicoActionPerformed
+
+    private void btnCopiar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCopiar2ActionPerformed
+        // TODO add your handling code here:
+        int opcionMotivo;
+        String motivo;
+        opcionMotivo=cboMotivo.getSelectedIndex();
+        switch (opcionMotivo) {
+            case 1:motivo="POTENCIA DEGRADADA"; break;
+            case 2:motivo="SIN POTENCIA"; break;
+            case 3:motivo="PUERTOS SIN POTENCIA"; break;
+            case 4:motivo="PUERTOS DEGRADADOS"; break;
+            case 5:motivo="CTO ROBADA"; break;
+            default:
+                motivo="";
+        }
+        String resultado="MOTIVO: "+motivo+"\n" +
+                " TICKET: "+txtTicket.getText()+"\n" +
+                "Cliente: "+txtCliente.getText()+"\n" +
+                "CTO: "+txtCto2.getText()+"\n" +
+                "COORDENADAS from: "+txtCoordenadas.getText()+"\n" +
+                "ACTIVOS "+txtActivos.getText()+"\n" +
+                "AFECTADOS "+txtAfectados.getText()+"\n" +
+                "CONTRATISTA QUE REPORTA: "+txtContratista.getText()+ "\n" +
+                "NOMBRE DEL TECNICO: "+txtNomTecnico.getText()+"";
+        txtResultado2.setText(resultado);
+        setClipboard(resultado);
+        
+        
+    }//GEN-LAST:event_btnCopiar2ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCopiar;
     private javax.swing.JButton btnCopiar2;
-    private javax.swing.JButton btnCopiar3;
     private javax.swing.JButton btnCopiarNuevo;
-    private javax.swing.JButton btnLimpiar;
     private javax.swing.JComboBox<String> cboContrata;
     private javax.swing.JComboBox<String> cboDistrito;
+    private javax.swing.JComboBox<String> cboMotivo;
     private javax.swing.JComboBox<String> cboPuerto;
-    private javax.swing.JComboBox<String> cboSubopcion;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JTextArea txtBorrador;
-    private javax.swing.JTextArea txtConsulta;
-    private javax.swing.JTextArea txtConsulta2;
-    private javax.swing.JTextArea txtConsulta3;
+    private javax.swing.JTextField txtActivos;
+    private javax.swing.JTextField txtAfectados;
+    private javax.swing.JTextField txtCliente;
+    private javax.swing.JTextField txtContratista;
+    private javax.swing.JTextField txtCoordenadas;
     private javax.swing.JTextField txtCto;
+    private javax.swing.JTextField txtCto2;
     private javax.swing.JTextField txtDireccion;
     private javax.swing.JButton txtLID;
-    private javax.swing.JButton txtLID2;
-    private javax.swing.JButton txtLID3;
-    private javax.swing.JButton txtLID4;
-    private javax.swing.JButton txtLID7;
-    private javax.swing.JButton txtLID8;
     private javax.swing.JButton txtLID9;
+    private javax.swing.JTextField txtNomTecnico;
     private javax.swing.JTextArea txtResultado;
-    private javax.swing.JTextArea txtSolucion;
+    private javax.swing.JTextArea txtResultado2;
+    private javax.swing.JTextField txtTicket;
     // End of variables declaration//GEN-END:variables
 
     @Override

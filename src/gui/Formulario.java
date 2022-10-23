@@ -1,86 +1,33 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package gui;
+
 
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.ClipboardOwner;
 import java.awt.datatransfer.StringSelection;
 import java.awt.datatransfer.Transferable;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.PrintWriter;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.StringTokenizer;
-import javax.swing.ComboBoxModel;
-import javax.swing.JComboBox;
-import javax.swing.JFileChooser;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
 
 /**
  *
  * @author ELVIS
  */
-public class Formulario extends javax.swing.JInternalFrame implements ClipboardOwner{
+public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
 
     /**
      * Creates new form Formulario
      */
     public Formulario() {
         initComponents();
-     
-         
     }
     public void setClipboard(String texto){
         StringSelection txt=new StringSelection(texto);
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(txt, this);
     }
-    /*public static String ObtenerFecha(){
-        Date fecha=new Date();
-        SimpleDateFormat formato=new SimpleDateFormat("dd_MM_yyyy");
-        return formato.format(fecha);
-    }
-    
-    public String ObtenerUser(){
-        String usuario=System.getProperty("user.name");
-        return usuario;
-    }
-    public void GuardarDatos(String datos){
-        File archivo;
-        FileWriter escribir;
-        PrintWriter linea;
-        
-        
-        archivo=new File("C:\\Users\\"+ObtenerUser()+"\\Desktop\\"+ObtenerFecha()+".txt");
-        if(!archivo.exists()){
-            try {
-                archivo.createNewFile();
-                escribir=new FileWriter(archivo,true);
-                linea=new PrintWriter(escribir);
-                linea.println(datos);
-                linea.close();
-                escribir.close();
-            } catch (Exception e) {
-                System.out.println(e);
-            }
-            
-        }else{
-            try {
-                escribir=new FileWriter(archivo,true);
-                linea=new PrintWriter(escribir);
-                linea.println(datos);
-                linea.close();
-                escribir.close();
-            } catch (Exception e) {
-                System.out.println(e);
-            }
-        }
-        
-    }*/
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -91,22 +38,6 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtLID = new javax.swing.JButton();
-        txtDireccion = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        cboContrata = new javax.swing.JComboBox<>();
-        jSeparator3 = new javax.swing.JSeparator();
-        jLabel10 = new javax.swing.JLabel();
-        txtCto = new javax.swing.JTextField();
-        txtLID9 = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
-        cboPuerto = new javax.swing.JComboBox<>();
-        jLabel12 = new javax.swing.JLabel();
-        cboDistrito = new javax.swing.JComboBox<>();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        txtResultado = new javax.swing.JTextArea();
-        btnCopiarNuevo = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         cboMotivo = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
@@ -118,93 +49,39 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
         jLabel13 = new javax.swing.JLabel();
         txtCoordenadas = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
+        txtDireccion = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
         txtActivos = new javax.swing.JTextField();
+        txtCto = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
+        txtLID9 = new javax.swing.JButton();
         txtAfectados = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        cboPuerto = new javax.swing.JComboBox<>();
         txtContratista = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        cboDistrito = new javax.swing.JComboBox<>();
+        cboContrata = new javax.swing.JComboBox<>();
+        txtLID = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         txtNomTecnico = new javax.swing.JTextField();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        txtResultado = new javax.swing.JTextArea();
         jLabel18 = new javax.swing.JLabel();
         jScrollPane7 = new javax.swing.JScrollPane();
         txtResultado2 = new javax.swing.JTextArea();
+        btnCopiarNuevo = new javax.swing.JButton();
+        jSeparator3 = new javax.swing.JSeparator();
         btnCopiar2 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtTextoGrande = new javax.swing.JTextArea();
+        jSeparator2 = new javax.swing.JSeparator();
+        btnMostrarTextoGrande = new javax.swing.JButton();
 
-        setClosable(true);
-        setIconifiable(true);
-        setMaximizable(true);
-
-        txtLID.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        txtLID.setText("X");
-        txtLID.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLIDActionPerformed(evt);
-            }
-        });
-
-        txtDireccion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtDireccionActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setText("Contrata:");
-
-        jLabel2.setText("Direccion:");
-
-        cboContrata.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona", "DIGETEL", "OLMA", "KAJOMI", "MALLAUSA", "SGM", "VCONNECTIONS", "CESPEDES", "ALL TELECOM", "ONI", "DATANTENNA" }));
-        cboContrata.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cboContrataActionPerformed(evt);
-            }
-        });
-
-        jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
-
-        jLabel10.setText("CTO/ NAP (Piso):");
-
-        txtCto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCtoActionPerformed(evt);
-            }
-        });
-
-        txtLID9.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
-        txtLID9.setText("X");
-        txtLID9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLID9ActionPerformed(evt);
-            }
-        });
-
-        jLabel11.setText("Puerto:");
-
-        cboPuerto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16" }));
-        cboPuerto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cboPuertoActionPerformed(evt);
-            }
-        });
-
-        jLabel12.setText("Distrito:");
-
-        cboDistrito.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona", "Ancón", "Ate", "Barranco", "Breña", "Carabayllo", "Cercado de Lima", "Chaclacayo", "Chorrillos", "Cieneguilla", "Comas", "El agustino", "Independencia", "Jesús maría", "La molina", "La victoria", "Lince", "Los olivos", "Lurigancho", "Lurín", "Magdalena del mar", "Miraflores", "Pachacámac", "Pucusana", "Pueblo libre", "Puente piedra", "Punta hermosa", "Punta negra", "Rímac", "San bartolo", "San borja", "San isidro", "San Juan de Lurigancho", "San Juan de Miraflores", "San Luis", "San Martin de Porres", "San Miguel", "Santa Anita", "Santa María del Mar", "Santa Rosa", "Santiago de Surco", "Surquillo", "Villa el Salvador", "Villa Maria del Triunfo" }));
-        cboDistrito.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cboDistritoActionPerformed(evt);
-            }
-        });
-
-        txtResultado.setColumns(20);
-        txtResultado.setRows(5);
-        jScrollPane6.setViewportView(txtResultado);
-
-        btnCopiarNuevo.setText("Copiar");
-        btnCopiarNuevo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCopiarNuevoActionPerformed(evt);
-            }
-        });
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         cboMotivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona", "POTENCIA DEGRADADA", "SIN POTENCIA", "PUERTOS SIN POTENCIA", "PUERTOS DEGRADADOS", "CTO ROBADA" }));
         cboMotivo.addActionListener(new java.awt.event.ActionListener() {
@@ -213,7 +90,7 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
             }
         });
 
-        jLabel6.setText("Motivo:");
+        jLabel6.setText("Motivo NAP /  CTO:");
 
         jLabel7.setText("Ticket:");
 
@@ -247,13 +124,35 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
 
         jLabel14.setText("Coordenadas:");
 
+        txtDireccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDireccionActionPerformed(evt);
+            }
+        });
+
+        jLabel10.setText("CTO/ NAP (Piso):");
+
         txtActivos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtActivosActionPerformed(evt);
             }
         });
 
+        txtCto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCtoActionPerformed(evt);
+            }
+        });
+
         jLabel15.setText("Activos:");
+
+        txtLID9.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        txtLID9.setText("X");
+        txtLID9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtLID9ActionPerformed(evt);
+            }
+        });
 
         txtAfectados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -261,11 +160,48 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
             }
         });
 
+        jLabel11.setText("Puerto:");
+
         jLabel16.setText("Afectados:");
+
+        cboPuerto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16" }));
+        cboPuerto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboPuertoActionPerformed(evt);
+            }
+        });
 
         txtContratista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtContratistaActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("Contrata:");
+
+        jLabel12.setText("Distrito:");
+
+        jLabel2.setText("Direccion:");
+
+        cboDistrito.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona", "Ancón", "Ate", "Barranco", "Breña", "Carabayllo", "Cercado de Lima", "Chaclacayo", "Chorrillos", "Cieneguilla", "Comas", "El agustino", "Independencia", "Jesús maría", "La molina", "La victoria", "Lince", "Los olivos", "Lurigancho", "Lurín", "Magdalena del mar", "Miraflores", "Pachacámac", "Pucusana", "Pueblo libre", "Puente piedra", "Punta hermosa", "Punta negra", "Rímac", "San bartolo", "San borja", "San isidro", "San Juan de Lurigancho", "San Juan de Miraflores", "San Luis", "San Martin de Porres", "San Miguel", "Santa Anita", "Santa María del Mar", "Santa Rosa", "Santiago de Surco", "Surquillo", "Villa el Salvador", "Villa Maria del Triunfo" }));
+        cboDistrito.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboDistritoActionPerformed(evt);
+            }
+        });
+
+        cboContrata.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona", "DIGETEL", "OLMA", "KAJOMI", "MALLAUSA", "SGM", "VCONNECTIONS", "CESPEDES", "ALL TELECOM", "ONI", "DATANTENNA" }));
+        cboContrata.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboContrataActionPerformed(evt);
+            }
+        });
+
+        txtLID.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        txtLID.setText("X");
+        txtLID.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtLIDActionPerformed(evt);
             }
         });
 
@@ -277,11 +213,24 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
             }
         });
 
+        txtResultado.setColumns(20);
+        txtResultado.setRows(5);
+        jScrollPane6.setViewportView(txtResultado);
+
         jLabel18.setText("Nombre del tecnico:");
 
         txtResultado2.setColumns(20);
         txtResultado2.setRows(5);
         jScrollPane7.setViewportView(txtResultado2);
+
+        btnCopiarNuevo.setText("Copiar");
+        btnCopiarNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCopiarNuevoActionPerformed(evt);
+            }
+        });
+
+        jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
         btnCopiar2.setText("Copiar");
         btnCopiar2.addActionListener(new java.awt.event.ActionListener() {
@@ -290,79 +239,104 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
             }
         });
 
+        txtTextoGrande.setColumns(20);
+        txtTextoGrande.setRows(5);
+        txtTextoGrande.setText("Ok compañero le brindo los clientes de baja, en caso lo ubique PORFAVOR ENVIAR FOTO DEL CINTILLO Y VALIDE QUE EL PUERTO COINCIDA CON LO INDICADO \n\n****************************************************\n\nW-33SC50-07\n\n72192273   SIN IDENTIFICAR\n71043712   8 \n43446135   SIN IDENTIFICAR\n42178256   4\n\n****************************************************\nTener en cuenta el siguiente criterio:\n\n⚠ En caso no lo ubique en el puerto correcto, indicar para poder tener en cuenta y CORREGIR EL CINTILLO, recuerde informar para validarlo - NO OLVIDARSE DE RETIRAR EL CINTILLO DEL CLIENTE DE BAJA EN CASO SE UTILIZE, ENVIAR EVIDENCIAS⚠\n\nIgualmente enviar la plantilla correspondiente para registrarlo:\n\nTICKET: \nCLIENTE:\nDNI:\nCTO:\nCOORDENADAS CTO:\nPUERTO UTILIZADO:\nPOTENCIA DE PUERTO UTILIZADO:\nDNI DEL CLIENTE AFECTADO:\nCONTRATA:");
+        jScrollPane1.setViewportView(txtTextoGrande);
+
+        btnMostrarTextoGrande.setText("Copiar");
+        btnMostrarTextoGrande.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMostrarTextoGrandeActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, 0)
+                .addComponent(jSeparator1)
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jSeparator1)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(6, 6, 6)
+                        .addComponent(btnMostrarTextoGrande)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jSeparator2)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 678, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel16)
+                                    .addComponent(jLabel17)
+                                    .addComponent(jLabel18))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtAfectados, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtContratista, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtNomTecnico, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel7)
                                             .addComponent(jLabel8)
-                                            .addComponent(jLabel13)
+                                            .addComponent(jLabel15)
+                                            .addComponent(jLabel6))
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel14)
-                                            .addComponent(jLabel15))
-                                        .addGap(12, 12, 12)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txtCto2, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtCoordenadas, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtActivos, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtTicket, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(cboMotivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(jLabel6))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(btnCopiar2)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel16)
-                                            .addComponent(jLabel17)
-                                            .addComponent(jLabel18))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txtAfectados, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtContratista, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtNomTecnico, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(jScrollPane7)))
+                                            .addComponent(jLabel13))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtActivos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(txtCto2, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtCoordenadas, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtTicket, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cboMotivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnCopiar2)
+                            .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtCto, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txtLID9)
-                                            .addComponent(txtLID)))
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel1)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(6, 6, 6)
-                                        .addComponent(cboContrata, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel10))
-                                .addGap(0, 0, 0)
-                                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, 0)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(cboPuerto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel11)
-                                    .addComponent(jLabel12)
-                                    .addComponent(cboDistrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCto, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnCopiarNuevo))))
+                                    .addComponent(txtLID9)
+                                    .addComponent(txtLID)))
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(cboContrata, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel10))
+                        .addGap(0, 0, 0)
+                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(cboPuerto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel12)
+                            .addComponent(cboDistrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnCopiarNuevo))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -402,9 +376,9 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
                                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 7, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel6)
                             .addComponent(cboMotivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -415,254 +389,79 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel8)
-                            .addComponent(txtCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtCto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel13)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel16)
-                            .addComponent(txtAfectados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel17)
-                            .addComponent(txtContratista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel18)
-                            .addComponent(txtNomTecnico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel13)
-                            .addComponent(txtCto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel14)
-                            .addComponent(txtCoordenadas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel15)
-                            .addComponent(txtActivos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
                         .addComponent(btnCopiar2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(90, 90, 90)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(txtCoordenadas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel14))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel15)
+                                    .addComponent(txtActivos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel16)
+                                    .addComponent(txtAfectados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel17)
+                                    .addComponent(txtContratista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel18)
+                                    .addComponent(txtNomTecnico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(22, 22, 22)
+                                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnMostrarTextoGrande)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtLIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLIDActionPerformed
-
-        txtDireccion.setText(null);
+    private void cboMotivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboMotivoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtLIDActionPerformed
+    }//GEN-LAST:event_cboMotivoActionPerformed
+
+    private void txtClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtClienteActionPerformed
+
+    private void txtTicketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTicketActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTicketActionPerformed
+
+    private void txtCto2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCto2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCto2ActionPerformed
+
+    private void txtCoordenadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCoordenadasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCoordenadasActionPerformed
 
     private void txtDireccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDireccionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDireccionActionPerformed
 
-    private void cboContrataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboContrataActionPerformed
-
-        /*String consulta,solucion;
-        int opcion;
-        opcion=cboSubopcion.getSelectedIndex();
-        
-        
-        if(cboContrata.getSelectedItem().equals("Calidad de red")){
-            cboSubopcion.setVisible(true);
-            
-        }
-        else if(cboContrata.getSelectedItem().equals("Descuento Saldo")){
-            cboSubopcion.setVisible(false);
-            consulta="Cliente consulta por descuento de saldo";
-            solucion="Se valida consumo por servicio MPS - Chat amigos - Salir 36000 - Consumo de 1.80 soles";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Routing category")){
-            
-            cboSubopcion.setVisible(false);
-            consulta="Cliente indica que no puede realizar llamadas";
-            solucion="Se valida error en routing category __ se realiza la correcion";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Migracion")){
-            cboSubopcion.setVisible(false);
-            consulta="Cliente desea migrar de ___";
-            solucion="__ se cumple con condiciones para transferencia \n" +
-                     "- Validó datos:	\n" +
-                     "- Número que se comunica: 	\n" +
-                     "- Número a migrar: 	\n" +
-                     "- Plan actual:		\n" +
-                     "- Plan que desea migrar: \n" +
-                     "- Motivo de migración:";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Cancelacion de linea")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente indica que desea cancelar su servicio";
-            solucion="Se verifica proceso de cancelación, se valida __ disponibilidad de transferencia.\n"+
-                     "- Validó datos: Si\n" +
-                     "- Número que se comunica:\n" +
-                     "- Número a cancelar:\n" +
-                     "- Motivo de cancelación:";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Bloqueo de linea y equipo")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea bloquear su línea y equipo";
-            solucion="Se procede con el bloqueo de línea y equipo.\n"+
-                     "- Línea a bloquear:\n" +
-                     "- Se validaron los datos del titular (1er y 2do nivel) / del que lo solicita / Reniec: (SI/NO):\n" +
-                     "- ¿Cuál es el número desde el cuál se reporta el robo o pérdida del equipo? (Obligatorio):\n" +
-                     "- Nombres y apellidos completos del solicitante:\n" +
-                     "- Documento de identidad del solicitante:\n" +
-                     "- Número de Referencia Adicional (Solicitar a que operador pertenece):\n" +
-                     "- IMEI bloqueado (16 o 14 dígitos):\n" +
-                     "- Marca y Modelo de Equipo bloqueado:\n" +
-                     "- Equipo a bloquear: (Último) / (Inmediato Anterior)\n" +
-                     "- Se requirió asociar IMEI: (SI/NO):\n" +
-                     "- ID de Llamada:";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Internet en 4G")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea saber si su linea accede a internet en 4G";
-            solucion="Se le indica que no es posible,su equipo y zona no son compatibles para la red 4G";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Ciclo de facturacion")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea saber su ciclo de facturacion";
-            solucion="Se le detalla su ciclo ... de facturacion";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Pago exitoso")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea confirmar el pago de su recibo";
-            solucion="Se le indica que esta al dia en sus recibos";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Como saber su numero")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea saber cual es su numero";
-            solucion="Se le indica la marcacion *180#send";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Confirmacion de recarga-SI")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea confirmar si se realizo la recarga";
-            solucion="Se le indica si se realizo la recarga";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Confirmacion de recarga-NO")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea confirmar si se realizo la recarga";
-            solucion="Se le indica no se realizo la recarga";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Desea saber su saldo")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea saber su saldo";
-            solucion="Se le brinda la informacion de su saldo";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Como saber su saldo")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea saber los medios de consulta de saldo";
-            solucion="Se le brinda los medios de consulta de saldo";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Paquete TI5")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea saber sobre el paquete TI5";
-            solucion="Se brinda informacion del paquete TI5";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Confirmar compra de paquete TI5")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea confirmar la compra del paquete TI5";
-            solucion="Se confirma la compra del paquete TI5";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Paquete MM10")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea saber sobre el paquete MM10";
-            solucion="Se le indica como comprar el paquete MM10";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Portabilidad")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea port su linea con nosotros";
-            solucion="Se le indica las consideraciones de la portabilidad";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Plan contratado")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea saber los beneficios del plan .....";
-            solucion="Se le detalla los beneficios del plan ......";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Chip de reposicion")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente desea saber como recuperar su chip de resposicion";
-            solucion="Se le indica como recuperar su chip por la web y presencial";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else if(cboContrata.getSelectedItem().equals("Routing category")){
-            cboSubopcion.setVisible(false);
-            
-            consulta="Cliente indica no puede realizar llamadas";
-            solucion="Se valida RC incorrecto ... ,se resetea,se le indica reiniciar y realizar las pruebas";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }
-        else{
-            cboSubopcion.setVisible(false);
-            consulta="";
-            solucion="";
-            txtConsulta.setText(consulta);
-            txtSolucion.setText(solucion);
-        }*/
-       
-      
+    private void txtActivosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtActivosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cboContrataActionPerformed
+    }//GEN-LAST:event_txtActivosActionPerformed
 
     private void txtCtoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCtoActionPerformed
         // TODO add your handling code here:
@@ -673,13 +472,38 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
         txtCto.setText("");
     }//GEN-LAST:event_txtLID9ActionPerformed
 
+    private void txtAfectadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAfectadosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAfectadosActionPerformed
+
     private void cboPuertoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboPuertoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cboPuertoActionPerformed
 
+    private void txtContratistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContratistaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtContratistaActionPerformed
+
     private void cboDistritoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboDistritoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cboDistritoActionPerformed
+
+    private void cboContrataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboContrataActionPerformed
+
+   
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cboContrataActionPerformed
+
+    private void txtLIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLIDActionPerformed
+
+        txtDireccion.setText(null);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtLIDActionPerformed
+
+    private void txtNomTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomTecnicoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNomTecnicoActionPerformed
 
     private void btnCopiarNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCopiarNuevoActionPerformed
         // TODO add your handling code here:
@@ -702,7 +526,7 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
             case 9: contrata= "ONI"; break;
             case 10: contrata= "DATANTENNA"; break;
             default:
-                contrata="";
+            contrata="";
         }
         switch (opcionDistrito) {
             case 1: distrito="Ancón"; break;
@@ -748,56 +572,20 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
             case 41: distrito="Surquillo"; break;
             case 42: distrito="Villa el Salvador"; break;
             case 43: distrito="Villa Maria del Triunfo"; break;
-            
+
             default:
-                distrito="";
+            distrito="";
         }
 
         datos="Traslado OK\n" +
-                    "Contrata :"+contrata+ "\n" +
-                    "Direccion:"+direccion+ " - "+distrito + "\n" +
-                    "CTO:"+cto+ "\n" +
-                    "PUERTO:"+opcionPuerto;
-        
+        "Contrata :"+contrata+ "\n" +
+        "Direccion:"+direccion+ " - "+distrito + "\n" +
+        "CTO:"+cto+ "\n" +
+        "PUERTO:"+opcionPuerto;
+
         txtResultado.setText(datos);
         setClipboard(datos);
     }//GEN-LAST:event_btnCopiarNuevoActionPerformed
-
-    private void cboMotivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboMotivoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cboMotivoActionPerformed
-
-    private void txtClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtClienteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtClienteActionPerformed
-
-    private void txtTicketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTicketActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtTicketActionPerformed
-
-    private void txtCto2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCto2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCto2ActionPerformed
-
-    private void txtCoordenadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCoordenadasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCoordenadasActionPerformed
-
-    private void txtActivosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtActivosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtActivosActionPerformed
-
-    private void txtAfectadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAfectadosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtAfectadosActionPerformed
-
-    private void txtContratistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContratistaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtContratistaActionPerformed
-
-    private void txtNomTecnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomTecnicoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNomTecnicoActionPerformed
 
     private void btnCopiar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCopiar2ActionPerformed
         // TODO add your handling code here:
@@ -811,27 +599,68 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
             case 4:motivo="PUERTOS DEGRADADOS"; break;
             case 5:motivo="CTO ROBADA"; break;
             default:
-                motivo="";
+            motivo="";
         }
-        String resultado="MOTIVO: "+motivo+"\n" +
-                " TICKET: "+txtTicket.getText()+"\n" +
-                "Cliente: "+txtCliente.getText()+"\n" +
-                "CTO: "+txtCto2.getText()+"\n" +
-                "COORDENADAS from: "+txtCoordenadas.getText()+"\n" +
-                "ACTIVOS: "+txtActivos.getText()+"\n" +
-                "AFECTADOS: "+txtAfectados.getText()+"\n" +
-                "CONTRATISTA QUE REPORTA: "+txtContratista.getText()+ "\n" +
-                "NOMBRE DEL TECNICO: "+txtNomTecnico.getText()+"";
+        String resultado="MOTIVO NAP/CTO: "+motivo+"\n" +
+        " TICKET: "+txtTicket.getText()+"\n" +
+        "Cliente: "+txtCliente.getText()+"\n" +
+        "CTO: "+txtCto2.getText()+"\n" +
+        "COORDENADAS: "+txtCoordenadas.getText()+"\n" +
+        "ACTIVOS: "+txtActivos.getText()+"\n" +
+        "AFECTADOS: "+txtAfectados.getText()+"\n" +
+        "CONTRATISTA QUE REPORTA: "+txtContratista.getText()+ "\n" +
+        "NOMBRE DEL TECNICO: "+txtNomTecnico.getText()+"";
         txtResultado2.setText(resultado);
         setClipboard(resultado);
-        
-        
+
     }//GEN-LAST:event_btnCopiar2ActionPerformed
 
+    private void btnMostrarTextoGrandeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarTextoGrandeActionPerformed
+        // TODO add your handling code here:
+        
+       
+        setClipboard(txtTextoGrande.getText());
+    }//GEN-LAST:event_btnMostrarTextoGrandeActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Formulario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Formulario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Formulario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Formulario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Formulario().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCopiar2;
     private javax.swing.JButton btnCopiarNuevo;
+    private javax.swing.JButton btnMostrarTextoGrande;
     private javax.swing.JComboBox<String> cboContrata;
     private javax.swing.JComboBox<String> cboDistrito;
     private javax.swing.JComboBox<String> cboMotivo;
@@ -850,9 +679,11 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTextField txtActivos;
     private javax.swing.JTextField txtAfectados;
@@ -867,11 +698,12 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
     private javax.swing.JTextField txtNomTecnico;
     private javax.swing.JTextArea txtResultado;
     private javax.swing.JTextArea txtResultado2;
+    private javax.swing.JTextArea txtTextoGrande;
     private javax.swing.JTextField txtTicket;
     // End of variables declaration//GEN-END:variables
 
     @Override
     public void lostOwnership(Clipboard clipboard, Transferable contents) {
-        //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

@@ -818,8 +818,8 @@ public class Formulario extends javax.swing.JInternalFrame implements ClipboardO
                 "Cliente: "+txtCliente.getText()+"\n" +
                 "CTO: "+txtCto2.getText()+"\n" +
                 "COORDENADAS from: "+txtCoordenadas.getText()+"\n" +
-                "ACTIVOS "+txtActivos.getText()+"\n" +
-                "AFECTADOS "+txtAfectados.getText()+"\n" +
+                "ACTIVOS: "+txtActivos.getText()+"\n" +
+                "AFECTADOS: "+txtAfectados.getText()+"\n" +
                 "CONTRATISTA QUE REPORTA: "+txtContratista.getText()+ "\n" +
                 "NOMBRE DEL TECNICO: "+txtNomTecnico.getText()+"";
         txtResultado2.setText(resultado);

@@ -616,7 +616,7 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
     }//GEN-LAST:event_btnCopiar2ActionPerformed
 
     private void btnMostrarTextoGrandeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarTextoGrandeActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:  
         
        
         setClipboard(txtTextoGrande.getText());

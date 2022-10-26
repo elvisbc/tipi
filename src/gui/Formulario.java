@@ -241,7 +241,6 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
 
         txtTextoGrande.setColumns(20);
         txtTextoGrande.setRows(5);
-        txtTextoGrande.setText("Ok compañero le brindo los clientes de baja, en caso lo ubique PORFAVOR ENVIAR FOTO DEL CINTILLO Y VALIDE QUE EL PUERTO COINCIDA CON LO INDICADO \n\n****************************************************\n\nW-33SC50-07\n\n72192273   SIN IDENTIFICAR\n71043712   8 \n43446135   SIN IDENTIFICAR\n42178256   4\n\n****************************************************\nTener en cuenta el siguiente criterio:\n\n⚠ En caso no lo ubique en el puerto correcto, indicar para poder tener en cuenta y CORREGIR EL CINTILLO, recuerde informar para validarlo - NO OLVIDARSE DE RETIRAR EL CINTILLO DEL CLIENTE DE BAJA EN CASO SE UTILIZE, ENVIAR EVIDENCIAS⚠\n\nIgualmente enviar la plantilla correspondiente para registrarlo:\n\nTICKET: \nCLIENTE:\nDNI:\nCTO:\nCOORDENADAS CTO:\nPUERTO UTILIZADO:\nPOTENCIA DE PUERTO UTILIZADO:\nDNI DEL CLIENTE AFECTADO:\nCONTRATA:");
         jScrollPane1.setViewportView(txtTextoGrande);
 
         btnMostrarTextoGrande.setText("Copiar");
@@ -618,8 +617,27 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
     private void btnMostrarTextoGrandeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarTextoGrandeActionPerformed
         // TODO add your handling code here:  
         
-       
-        setClipboard(txtTextoGrande.getText());
+        String texto = "Ok compañero le brindo los clientes de baja, en caso lo ubique PORFAVOR ENVIAR FOTO DEL CINTILLO Y VALIDE QUE EL PUERTO COINCIDA CON LO INDICADO \n"
+                + "\n"
+                + "****************************************************\n"
+                +txtTextoGrande.getText()+"\n"
+                + "****************************************************\n"
+                + "Tener en cuenta el siguiente criterio:\n"
+                + "\n"
+                + "⚠ En caso no lo ubique en el puerto correcto, indicar para poder tener en cuenta y CORREGIR EL CINTILLO, recuerde informar para validarlo - NO OLVIDARSE DE RETIRAR EL CINTILLO DEL CLIENTE DE BAJA EN CASO SE UTILIZE, ENVIAR EVIDENCIAS⚠\n"
+                + "\n"
+                + "Igualmente enviar la plantilla correspondiente para registrarlo:\n"
+                + "\n"
+                + "TICKET: \n"
+                + "CLIENTE:\n"
+                + "DNI:\n"
+                + "CTO:\n"
+                + "COORDENADAS CTO:\n"
+                + "PUERTO UTILIZADO:\n"
+                + "POTENCIA DE PUERTO UTILIZADO:\n"
+                + "DNI DEL CLIENTE AFECTADO:\n"
+                + "CONTRATA:";
+        setClipboard(texto);
     }//GEN-LAST:event_btnMostrarTextoGrandeActionPerformed
 
     /**

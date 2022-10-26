@@ -598,7 +598,6 @@
           <Properties>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Ok compa&#xf1;ero le brindo los clientes de baja, en caso lo ubique PORFAVOR ENVIAR FOTO DEL CINTILLO Y VALIDE QUE EL PUERTO COINCIDA CON LO INDICADO &#xa;&#xa;****************************************************&#xa;&#xa;W-33SC50-07&#xa;&#xa;72192273   SIN IDENTIFICAR&#xa;71043712   8 &#xa;43446135   SIN IDENTIFICAR&#xa;42178256   4&#xa;&#xa;****************************************************&#xa;Tener en cuenta el siguiente criterio:&#xa;&#xa;&#x26a0; En caso no lo ubique en el puerto correcto, indicar para poder tener en cuenta y CORREGIR EL CINTILLO, recuerde informar para validarlo - NO OLVIDARSE DE RETIRAR EL CINTILLO DEL CLIENTE DE BAJA EN CASO SE UTILIZE, ENVIAR EVIDENCIAS&#x26a0;&#xa;&#xa;Igualmente enviar la plantilla correspondiente para registrarlo:&#xa;&#xa;TICKET: &#xa;CLIENTE:&#xa;DNI:&#xa;CTO:&#xa;COORDENADAS CTO:&#xa;PUERTO UTILIZADO:&#xa;POTENCIA DE PUERTO UTILIZADO:&#xa;DNI DEL CLIENTE AFECTADO:&#xa;CONTRATA:"/>
           </Properties>
         </Component>
       </SubComponents>

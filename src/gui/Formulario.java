@@ -58,7 +58,6 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
         txtAfectados = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        cboPuerto = new javax.swing.JComboBox<>();
         txtContratista = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -80,6 +79,9 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
         txtTextoGrande = new javax.swing.JTextArea();
         jSeparator2 = new javax.swing.JSeparator();
         btnMostrarTextoGrande = new javax.swing.JButton();
+        btnClienteDesconectad = new javax.swing.JButton();
+        btnSplitter = new javax.swing.JButton();
+        txtPuerto = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -164,13 +166,6 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
 
         jLabel16.setText("Afectados:");
 
-        cboPuerto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16" }));
-        cboPuerto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cboPuertoActionPerformed(evt);
-            }
-        });
-
         txtContratista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtContratistaActionPerformed(evt);
@@ -250,6 +245,26 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
             }
         });
 
+        btnClienteDesconectad.setText("Cliente desconectado");
+        btnClienteDesconectad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClienteDesconectadActionPerformed(evt);
+            }
+        });
+
+        btnSplitter.setText("Uso de Splitter");
+        btnSplitter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSplitterActionPerformed(evt);
+            }
+        });
+
+        txtPuerto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPuertoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -260,54 +275,6 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
             .addGroup(layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(btnMostrarTextoGrande)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSeparator2)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 678, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap())))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel16)
-                                    .addComponent(jLabel17)
-                                    .addComponent(jLabel18))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtAfectados, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtContratista, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtNomTecnico, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel7)
-                                            .addComponent(jLabel8)
-                                            .addComponent(jLabel15)
-                                            .addComponent(jLabel6))
-                                        .addGap(0, 0, Short.MAX_VALUE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel14)
-                                            .addComponent(jLabel13))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtActivos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(txtCto2, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtCoordenadas, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtTicket, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(cboMotivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnCopiar2)
-                            .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -326,17 +293,69 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
                             .addComponent(jLabel10))
                         .addGap(0, 0, 0)
                         .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cboPuerto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel11)
                             .addComponent(jLabel12)
-                            .addComponent(cboDistrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cboDistrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(txtPuerto, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnCopiarNuevo))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnMostrarTextoGrande)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jSeparator2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnClienteDesconectad)
+                                    .addComponent(btnSplitter))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 678, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel16)
+                                            .addComponent(jLabel17)
+                                            .addComponent(jLabel18))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtAfectados, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtContratista, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(txtNomTecnico, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel7)
+                                                    .addComponent(jLabel8)
+                                                    .addComponent(jLabel15)
+                                                    .addComponent(jLabel6))
+                                                .addGap(0, 0, Short.MAX_VALUE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel14)
+                                                    .addComponent(jLabel13))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtActivos, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(txtCto2, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(txtCoordenadas, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(txtCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(txtTicket, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(cboMotivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnCopiar2)
+                                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addContainerGap(18, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -369,7 +388,7 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel11)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cboPuerto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtPuerto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))))
@@ -423,7 +442,12 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
                                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnMostrarTextoGrande)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnMostrarTextoGrande)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnClienteDesconectad)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnSplitter))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -475,10 +499,6 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtAfectadosActionPerformed
 
-    private void cboPuertoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboPuertoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cboPuertoActionPerformed
-
     private void txtContratistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContratistaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtContratistaActionPerformed
@@ -506,12 +526,12 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
 
     private void btnCopiarNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCopiarNuevoActionPerformed
         // TODO add your handling code here:
-        String datos,contrata,direccion,distrito,cto;
-        int opcionContrata,opcionPuerto,opcionDistrito;
+        String datos,contrata,direccion,distrito,cto,puerto;
+        int opcionContrata,opcionDistrito;
         opcionContrata=cboContrata.getSelectedIndex();
         direccion=txtDireccion.getText();
         cto=txtCto.getText();
-        opcionPuerto=cboPuerto.getSelectedIndex();
+        puerto=txtPuerto.getText();
         opcionDistrito=cboDistrito.getSelectedIndex();
         switch (opcionContrata) {
             case 1: contrata="DIGETEL"; break;
@@ -580,7 +600,7 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
         "Contrata :"+contrata+ "\n" +
         "Direccion:"+direccion+ " - "+distrito + "\n" +
         "CTO:"+cto+ "\n" +
-        "PUERTO:"+opcionPuerto;
+        "PUERTO:"+puerto;
 
         txtResultado.setText(datos);
         setClipboard(datos);
@@ -640,6 +660,42 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
         setClipboard(texto);
     }//GEN-LAST:event_btnMostrarTextoGrandeActionPerformed
 
+    private void btnClienteDesconectadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClienteDesconectadActionPerformed
+        // TODO add your handling code here:
+        
+        String texto = "TICKET:\n"
+                + "CLIENTE ATENDIDO\n"
+                + "DNI DEL CLIENTE ATENDIDO:\n"
+                + "CTO o CAJA NAP: \n"
+                + "PUERTO: \n"
+                + "DNI DEL CLIENTE CONECTADOS ACTUALMENTE EN EL PUERTO:\n"
+                + "DATOS DEL TECNICO QUE REPORTA:\n"
+                + "CONTRATA:";
+        setClipboard(texto);
+    }//GEN-LAST:event_btnClienteDesconectadActionPerformed
+
+    private void btnSplitterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSplitterActionPerformed
+        // TODO add your handling code here:
+        
+        String texto = "TICKET: \n"
+                + "CLIENTE COLOCADO EN SPLITTER:\n"
+                + "DNI DEL CLIENTE COLOCADO:\n"
+                + "-------------------------------------\n"
+                + "DNI DEL CLIENTE AFECTADO:\n"
+                + "CTO:\n"
+                + "COORDENADAS CTO:\n"
+                + "PUERTO UTILIZADO:\n"
+                + "-------------------------------------\n"
+                + "POTENCIA EN EL PUERTO:\n"
+                + "POTENCIA EN EL PUERTO CON SPLITTER: \n"
+                + "CONTRATA:";
+        setClipboard(texto);
+    }//GEN-LAST:event_btnSplitterActionPerformed
+
+    private void txtPuertoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPuertoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPuertoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -676,13 +732,14 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnClienteDesconectad;
     private javax.swing.JButton btnCopiar2;
     private javax.swing.JButton btnCopiarNuevo;
     private javax.swing.JButton btnMostrarTextoGrande;
+    private javax.swing.JButton btnSplitter;
     private javax.swing.JComboBox<String> cboContrata;
     private javax.swing.JComboBox<String> cboDistrito;
     private javax.swing.JComboBox<String> cboMotivo;
-    private javax.swing.JComboBox<String> cboPuerto;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -714,6 +771,7 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
     private javax.swing.JButton txtLID;
     private javax.swing.JButton txtLID9;
     private javax.swing.JTextField txtNomTecnico;
+    private javax.swing.JTextField txtPuerto;
     private javax.swing.JTextArea txtResultado;
     private javax.swing.JTextArea txtResultado2;
     private javax.swing.JTextArea txtTextoGrande;

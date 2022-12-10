@@ -527,75 +527,13 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
     private void btnCopiarNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCopiarNuevoActionPerformed
         // TODO add your handling code here:
         String datos,contrata,direccion,distrito,cto,puerto;
-        int opcionContrata,opcionDistrito;
-        opcionContrata=cboContrata.getSelectedIndex();
+        
+        contrata=cboContrata.getSelectedItem().toString();
         direccion=txtDireccion.getText();
         cto=txtCto.getText();
         puerto=txtPuerto.getText();
-        opcionDistrito=cboDistrito.getSelectedIndex();
-        switch (opcionContrata) {
-            case 1: contrata="DIGETEL"; break;
-            case 2: contrata= "OLMA"; break;
-            case 3: contrata= "KAJOMI"; break;
-            case 4: contrata= "MALLAUSA"; break;
-            case 5: contrata= "SGM"; break;
-            case 6: contrata= "VCONNECTIONS"; break;
-            case 7: contrata= "CESPEDES"; break;
-            case 8: contrata= "ALL TELECOM"; break;
-            case 9: contrata= "ONI"; break;
-            case 10: contrata= "DATANTENNA"; break;
-            default:
-            contrata="";
-        }
-        switch (opcionDistrito) {
-            case 1: distrito="Ancón"; break;
-            case 2: distrito="Ate"; break;
-            case 3: distrito="Barranco"; break;
-            case 4: distrito="Breña"; break;
-            case 5: distrito="Carabayllo"; break;
-            case 6: distrito="Cercado de Lima"; break;
-            case 7: distrito="Chaclacayo"; break;
-            case 8: distrito="Chorrillos"; break;
-            case 9: distrito="Cieneguilla"; break;
-            case 10: distrito="Comas"; break;
-            case 11: distrito="El agustino"; break;
-            case 12: distrito="Independencia"; break;
-            case 13: distrito="Jesús maría"; break;
-            case 14: distrito="La molina"; break;
-            case 15: distrito="La victoria"; break;
-            case 16: distrito="Lince"; break;
-            case 17: distrito="Los olivos"; break;
-            case 18: distrito="Lurigancho"; break;
-            case 19: distrito="Lurín"; break;
-            case 20: distrito="Magdalena del mar"; break;
-            case 21: distrito="Miraflores"; break;
-            case 22: distrito="Pachacámac"; break;
-            case 23: distrito="Pucusana"; break;
-            case 24: distrito="Pueblo libre"; break;
-            case 25: distrito="Puente piedra"; break;
-            case 26: distrito="Punta hermosa"; break;
-            case 27: distrito="Punta negra"; break;
-            case 28: distrito="Rímac"; break;
-            case 29: distrito="San bartolo"; break;
-            case 30: distrito="San borja" ; break;
-            case 31: distrito="San isidro"; break;
-            case 32: distrito="San Juan de Lurigancho"; break;
-            case 33: distrito="San Juan de Miraflores"; break;
-            case 34: distrito="San Luis"; break;
-            case 35: distrito="San Martin de Porres"; break;
-            case 36: distrito="San Miguel"; break;
-            case 37: distrito="Santa Anita"; break;
-            case 38: distrito="Santa María del Mar"; break;
-            case 39: distrito="Santa Rosa"; break;
-            case 40: distrito="Santiago de Surco"; break;
-            case 41: distrito="Surquillo"; break;
-            case 42: distrito="Villa el Salvador"; break;
-            case 43: distrito="Villa Maria del Triunfo"; break;
-
-            default:
-            distrito="";
-        }
-
+        distrito=cboDistrito.getSelectedItem().toString();
+        
         datos="Traslado OK\n" +
         "Contrata :"+contrata+ "\n" +
         "Direccion:"+direccion+ " - "+distrito + "\n" +
@@ -608,18 +546,10 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
 
     private void btnCopiar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCopiar2ActionPerformed
         // TODO add your handling code here:
-        int opcionMotivo;
+    
         String motivo;
-        opcionMotivo=cboMotivo.getSelectedIndex();
-        switch (opcionMotivo) {
-            case 1:motivo="POTENCIA DEGRADADA"; break;
-            case 2:motivo="SIN POTENCIA"; break;
-            case 3:motivo="PUERTOS SIN POTENCIA"; break;
-            case 4:motivo="PUERTOS DEGRADADOS"; break;
-            case 5:motivo="CTO ROBADA"; break;
-            default:
-            motivo="";
-        }
+        motivo=cboMotivo.getSelectedItem().toString();
+        
         String resultado="MOTIVO NAP/CTO: "+motivo+"\n" +
         " TICKET: "+txtTicket.getText()+"\n" +
         "Cliente: "+txtCliente.getText()+"\n" +

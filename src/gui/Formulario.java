@@ -572,21 +572,22 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
                 + "****************************************************\n"
                 +txtTextoGrande.getText()+"\n"
                 + "****************************************************\n"
-                + "Tener en cuenta el siguiente criterio:\n"
-                + "\n"
-                + "⚠ En caso no lo ubique en el puerto correcto, indicar para poder tener en cuenta y CORREGIR EL CINTILLO, recuerde informar para validarlo - NO OLVIDARSE DE RETIRAR EL CINTILLO DEL CLIENTE DE BAJA EN CASO SE UTILIZE, ENVIAR EVIDENCIAS⚠\n"
-                + "\n"
-                + "Igualmente enviar la plantilla correspondiente para registrarlo:\n"
-                + "\n"
-                + "TICKET: \n"
-                + "CLIENTE:\n"
-                + "DNI:\n"
-                + "CTO:\n"
-                + "COORDENADAS CTO:\n"
-                + "PUERTO UTILIZADO:\n"
-                + "POTENCIA DE PUERTO UTILIZADO:\n"
-                + "DNI DEL CLIENTE AFECTADO:\n"
-                + "CONTRATA:";
+                + "Tener en cuenta el siguiente criterio:\n" 
+                +"\n" 
+                +"⚠ En caso no lo ubique en el puerto brindado o indica puerto no identificado, porfavor indicar con la plantilla correspondiente para poder tener en cuenta y se realice la validación correspondiente para confirmar si procede o no y en caso se le brinda la autorización pueda proceder - Tener en cuenta que si el técnico realizo la gestión sin confirmación del gestor a cargo, el caso será reportado por omitir el proceso correcto.\n" +
+                "\n" +
+                "♻ No olvide de CORREGIR EL CINTILLO CON EL PUERTO INDICADO PARA REPONER EL SERVICIO DEL CLIENTE/ ATENDIDO Y ENVIAR EVIDENCIA DEL CABLE CORTADO Y CINTILLO RETIRADO DEL CLIENTE/A DE BAJA UTILIZADO ❌\n" +
+                "\n" +
+                "Recuerde que el uso de la plantilla es obligatorio y de no hacerlo el gestor a cargo etiquetara al líder técnico y se reportara a los encargados de la contrata.\n" +
+                "\n" +
+                "TICKET: \n" +
+                "CLIENTE:\n" +
+                "DNI:\n" +
+                "CTO O CAJA NAP:\n" +
+                "PUERTO UTILIZADO:\n" +
+                "POTENCIA DE PUERTO UTILIZADO:\n" +
+                "DNI DEL CLIENTE AFECTADO:\n" +
+                "CONTRATA:";
         setClipboard(texto);
     }//GEN-LAST:event_btnMostrarTextoGrandeActionPerformed
 

@@ -80,13 +80,13 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
         jLabel19 = new javax.swing.JLabel();
         cboDistrito2 = new javax.swing.JComboBox<>();
         cboContrata2 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
+        btnValidacionCableado = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        btnCambiosONT = new javax.swing.JButton();
+        btnCambiosCTONAP = new javax.swing.JButton();
+        btnRematriculacion = new javax.swing.JButton();
+        btnValidacionDanDetec = new javax.swing.JButton();
+        btnValidacionLlamada = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -227,7 +227,7 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
             }
         });
 
-        btnSplitter.setText("Uso de Splitter");
+        btnSplitter.setText("Utilizacion de Splitter");
         btnSplitter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSplitterActionPerformed(evt);
@@ -264,10 +264,10 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
             }
         });
 
-        jButton1.setText("Validacion de cableado a realizar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnValidacionCableado.setText("Validacion de cableado a realizar");
+        btnValidacionCableado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnValidacionCableadoActionPerformed(evt);
             }
         });
 
@@ -278,38 +278,38 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
             }
         });
 
-        jButton6.setText("Cambio de ONT");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnCambiosONT.setText("Cambio de ONT");
+        btnCambiosONT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnCambiosONTActionPerformed(evt);
             }
         });
 
-        jButton7.setText("Cambio de CTO o caja NAP");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btnCambiosCTONAP.setText("Cambio de CTO o caja NAP");
+        btnCambiosCTONAP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btnCambiosCTONAPActionPerformed(evt);
             }
         });
 
-        jButton8.setText("Rematriculacion");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        btnRematriculacion.setText("Rematriculacion");
+        btnRematriculacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                btnRematriculacionActionPerformed(evt);
             }
         });
 
-        jButton9.setText("Validacion para daño detectado en las instalaciones parte cliente");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        btnValidacionDanDetec.setText("Validacion para daño detectado en las instalaciones parte cliente");
+        btnValidacionDanDetec.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                btnValidacionDanDetecActionPerformed(evt);
             }
         });
 
-        jButton10.setText("Validacion de llamada");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        btnValidacionLlamada.setText("Validacion de llamada");
+        btnValidacionLlamada.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                btnValidacionLlamadaActionPerformed(evt);
             }
         });
 
@@ -405,14 +405,14 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
                                     .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton9)
+                                    .addComponent(btnValidacionDanDetec)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(jButton8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jButton7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jButton6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btnRematriculacion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btnCambiosCTONAP, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btnCambiosONT, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addComponent(jButton10))))
+                                        .addComponent(btnValidacionCableado, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(btnValidacionLlamada))))
                         .addContainerGap())))
         );
         layout.setVerticalGroup(
@@ -498,19 +498,19 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
                                     .addComponent(txtCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton1)
+                                .addComponent(btnValidacionCableado)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton6)
+                                .addComponent(btnCambiosONT)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton7)))
+                                .addComponent(btnCambiosCTONAP)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton8)
+                        .addComponent(btnRematriculacion)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton9)
+                        .addComponent(btnValidacionDanDetec)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton10)))
+                        .addComponent(btnValidacionLlamada)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -653,13 +653,14 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
         // TODO add your handling code here:
         
         String texto = "TICKET:\n"
-                + "CLIENTE ATENDIDO\n"
+                + "CLIENTE(A) ATENDIDO\n"
                 + "DNI DEL CLIENTE ATENDIDO:\n"
-                + "CTO o CAJA NAP: \n"
+                + "CODIGO DE CTO O PISO DE CAJA NAP: \n"
+                + "DIRECCION O NOMBRE DE EDIFICIO / CONDOMINIO / RESIDENCIAL:\n"
                 + "PUERTO: \n"
-                + "DNI DEL CLIENTE CONECTADOS ACTUALMENTE EN EL PUERTO:\n"
-                + "DATOS DEL TECNICO QUE REPORTA:\n"
-                + "CONTRATA:";
+                + "DNI DEL CLIENTE CONECTADO ACTUALMENTE EN EL PUERTO:\n"
+                + "NOMBRE DEL TECNICO:\n"
+                + "CONTRATA O PARTNER:";
         setClipboard(texto);
     }//GEN-LAST:event_btnClienteDesconectadActionPerformed
 
@@ -667,17 +668,17 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
         // TODO add your handling code here:
         
         String texto = "TICKET: \n"
-                + "CLIENTE COLOCADO EN SPLITTER:\n"
-                + "DNI DEL CLIENTE COLOCADO:\n"
+                + "CLIENTE(A) COLOCADO EN SPLITTER:\n"
+                + "DNI DEL CLIENTE(A) COLOCADO:\n"
                 + "-------------------------------------\n"
-                + "DNI DEL CLIENTE AFECTADO:\n"
-                + "CTO:\n"
-                + "COORDENADAS CTO:\n"
+                + "DNI DEL CLIENTE(A) AFECTADO:\n"
+                + "CODIGO DE CTO O PISO DE CAJA NAP:\n"
+                + "DIRECCION O NOMBRE DE EDIFICIO / CONDOMINIO / RESIDENCIAL:\n"
                 + "PUERTO UTILIZADO:\n"
                 + "-------------------------------------\n"
                 + "POTENCIA EN EL PUERTO:\n"
                 + "POTENCIA EN EL PUERTO CON SPLITTER: \n"
-                + "CONTRATA:";
+                + "CONTRATA O PARTNER:";
         setClipboard(texto);
     }//GEN-LAST:event_btnSplitterActionPerformed
 
@@ -697,14 +698,15 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
         // TODO add your handling code here:
     }//GEN-LAST:event_cboContrata2ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnValidacionCableadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnValidacionCableadoActionPerformed
         // TODO add your handling code here:
         String texto = "TICKET:\n"
-                + "CLIENTE:\n"
+                + "NOMBRE DEL CLIENTE(A):\n"
                 + "DNI:\n"
-                + "CTO O CAJA NAP:\n"
+                + "CODIGO DE CTO O PISO DE CAJA NAP:\n"
+                + "DIRECCION O NOMBRE DE EDIFICIO / CONDOMINIO / RESIDENCIAL:\n"
                 + "NUMERO DE PUERTO:\n"
-                + "POTENCIA DE PUERTO: \n"
+                + "POTENCIA DE PUERTO:\n"
                 + "METRAJE UTILIZADO:\n"
                 + "NOMBRE DEL TECNICO:\n"
                 + "GESTION A REALIZAR: \n"
@@ -714,63 +716,65 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
                 + "3. TRASLADO\n"
                 + "4. REINSTALACION";
         setClipboard(texto);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnValidacionCableadoActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         String texto = "TICKET: \n"
-                + "CLIENTE:\n"
+                + "NOMBRE DEL CLIENTE(A):\n"
                 + "DNI:\n"
-                + "CTO O CAJA NAP:\n"
+                + "CODIGO DE CTO O PISO DE CAJA NAP:\n"
+                + "DIRECCION O NOMBRE DE EDIFICIO / CONDOMINIO / RESIDENCIAL:\n"
                 + "PUERTO UTILIZADO:\n"
                 + "POTENCIA DE PUERTO UTILIZADO:\n"
                 + "DNI DEL CLIENTE AFECTADO:\n"
-                + "CONTRATA:";
+                + "CONTRATA O PARTNER:";
         setClipboard(texto);
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btnCambiosONTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCambiosONTActionPerformed
         // TODO add your handling code here:
         String texto = "TICKET:\n"
-                + "NOMBRE DEL CLIENTE:\n"
+                + "NOMBRE DEL CLIENTE(A):\n"
                 + "DNI:\n"
                 + "SN DEL ONT ANTIGUO:\n"
                 + "SN DEL ONT NUEVO:\n"
-                + "TECNICO:\n"
-                + "CONTRATA:\n"
+                + "NOMBRE DEL TECNICO:\n"
+                + "CONTRATA O PARTNER:\n"
                 + "OBSERVACION:";
         setClipboard(texto);
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btnCambiosONTActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void btnCambiosCTONAPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCambiosCTONAPActionPerformed
         // TODO add your handling code here:
         String texto = "TICKET: \n"
-                + "NOMBRE DEL CLIENTE: \n"
+                + "NOMBRE DEL CLIENTE(A): \n"
                 + "DNI: \n"
                 + "SN DEL ONT ACTUAL:\n"
-                + "CTO O PISO DE CAJA NAP: \n"
-                + "PUERTO:\n"
-                + "TECNICO:\n"
-                + "CONTRATA: \n"
+                + "CODIGO DE CTO O PISO DE CAJA NAP: \n"
+                + "DIRECCION O NOMBRE DE EDIFICIO / CONDOMINIO / RESIDENCIAL:\n"
+                + "NUMERO DE PUERTO:\n"
+                + "NOMBRE DEL TECNICO:\n"
+                + "CONTRATA O PARTNER: \n"
                 + "OBSERVACION: ";
         setClipboard(texto);
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_btnCambiosCTONAPActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void btnRematriculacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRematriculacionActionPerformed
         // TODO add your handling code here:
         String texto = "TICKET: \n"
-                + "NOMBRE DEL CLIENTE: \n"
+                + "NOMBRE DEL CLIENTE(A): \n"
                 + "DNI: \n"
                 + "SN DEL ONT ACTUAL:\n"
-                + "TECNICO:\n"
-                + "CONTRATA: \n"
+                + "NOMBRE DEL TECNICO:\n"
+                + "CONTRATA O PARTNER: \n"
                 + "OBSERVACION:";
         setClipboard(texto);
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_btnRematriculacionActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void btnValidacionDanDetecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnValidacionDanDetecActionPerformed
         // TODO add your handling code here:
-        String texto = "CLIENTE:\n"
+        String texto = "NOMBRE DEL CLIENTE(A):\n"
                 + "DNI:\n"
                 + "TELEFONO:\n"
                 + "DIRECCION:\n"
@@ -778,20 +782,20 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
                 + "SOLICITUD O DAÑO DETECTADO:\n"
                 + "OBSERVACION:";
         setClipboard(texto);
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_btnValidacionDanDetecActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void btnValidacionLlamadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnValidacionLlamadaActionPerformed
         // TODO add your handling code here:
-        String texto = "CLIENTE:\n"
+        String texto = "NOMBRE DEL CLIENTE(A):\n"
                 + "DNI:\n"
-                + "CONTRATA:\n"
+                + "CONTRATA O PARTNER:\n"
                 + "FECHA Y TRAMO SOLICITADO:\n"
                 + "NUMERO DE CONTACTO:\n"
                 + "MOTIVO:\n"
                 + "TICKET: \n"
                 + "OBSERVACIONES:";
         setClipboard(texto);
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_btnValidacionLlamadaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -829,23 +833,23 @@ public class Formulario extends javax.swing.JFrame implements ClipboardOwner {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCambiosCTONAP;
+    private javax.swing.JButton btnCambiosONT;
     private javax.swing.JButton btnClienteDesconectad;
     private javax.swing.JButton btnCopiar2;
     private javax.swing.JButton btnCopiarNuevo;
     private javax.swing.JButton btnMostrarTextoGrande;
+    private javax.swing.JButton btnRematriculacion;
     private javax.swing.JButton btnSplitter;
+    private javax.swing.JButton btnValidacionCableado;
+    private javax.swing.JButton btnValidacionDanDetec;
+    private javax.swing.JButton btnValidacionLlamada;
     private javax.swing.JComboBox<String> cboContrata;
     private javax.swing.JComboBox<String> cboContrata2;
     private javax.swing.JComboBox<String> cboDistrito;
     private javax.swing.JComboBox<String> cboDistrito2;
     private javax.swing.JComboBox<String> cboMotivo;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
